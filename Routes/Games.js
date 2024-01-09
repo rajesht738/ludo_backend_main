@@ -52,10 +52,10 @@ const upload = multer({
 //Game_Ammount <= 10000
 router.post('/challange/create', Auth, async (req, res) => {
   const { Game_type, Game_Ammount } = req.body;
-  console.log(req.user.id);
+  // console.log(req.user.id);
   try {
     const user = await User.findById(req.user.id);
-    if (Game_Ammount >= 5 && Game_Ammount <= 10) {
+    if (Game_Ammount >= 5 && Game_Ammount <= 100) {
       if (Game_Ammount % 5 === 0) {
         if (user.Wallet_balance >= req.body.Game_Ammount) {
           let prevGame = await Game.find({

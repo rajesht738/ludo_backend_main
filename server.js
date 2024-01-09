@@ -20,10 +20,10 @@ const { default: axios } = require('axios');
 //         console.log(`you are not connected`);
 //     }
 // });
-// mongodb+srv://tiwarirj73:YPYAa8de6N1nrP32@cluster0.0ebnjdh.mongodb.net/
+
 // 'mongodb+srv://vibudh17:admin123@jpludo.zygzp1f.mongodb.net/?retryWrites=true&w=majority'
 mongoose.connect( 
-  'mongodb+srv://tiwarirj73:YPYAa8de6N1nrP32@cluster0.0ebnjdh.mongodb.net' ,
+  'mongodb+srv://vibudh17:admin123@jpludo.zygzp1f.mongodb.net/?retryWrites=true&w=majority' ,
   {useUnifiedTopology: true},
   (err) => {
     if (!err) {
